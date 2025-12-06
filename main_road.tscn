@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch78q2tfogba3"]
+
+[ext_resource type="Script" uid="uid://dxbayrvgv0n6h" path="res://main_road.gd" id="1_4yq8l"]
+[ext_resource type="Texture2D" uid="uid://chyafk2likfji" path="res://Sprite-0001.png" id="2_2tnb5"]
+[ext_resource type="Texture2D" uid="uid://djbtrtgn18uje" path="res://Sprite-0002.png" id="3_t6st7"]
+[ext_resource type="Texture2D" uid="uid://ck2ah1erq0xa1" path="res://Sprite-0003.png" id="4_v2spk"]
+
+[node name="Main_Game" type="Node2D"]
+
+[node name="Road" type="Node2D" parent="."]
+script = ExtResource("1_4yq8l")
+
+[node name="Car" type="AnimatableBody2D" parent="Road"]
+
+[node name="Car" type="Sprite2D" parent="Road/Car"]
+position = Vector2(0, 6)
+texture = ExtResource("2_2tnb5")
+
+[node name="Car2" type="Sprite2D" parent="Road/Car"]
+visible = false
+position = Vector2(0, 6)
+texture = ExtResource("3_t6st7")
+
+[node name="Car3" type="Sprite2D" parent="Road/Car"]
+visible = false
+position = Vector2(0, 6)
+texture = ExtResource("4_v2spk")
